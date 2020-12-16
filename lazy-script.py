@@ -13,7 +13,7 @@ sec_time_sleep_interval = 1
 
 # Open URL in a new tab, if a browser window is already open.
 
-answer1 = str(input('1)Do you want to open links in a new tabs in default web-browser? [yes/no] '))
+answer1 = str(input('1) Do you want to open prepared links/web-tools in a new tabs of a default web-browser? [yes/no]'))
 
 if answer1.lower() == 'yes':
     
@@ -53,9 +53,9 @@ if answer1.lower() == 'yes':
  
 else:
     
-    print('Your answer is no, so links in a new tabs would not be opened!\n\n')
+    print('Your answer is no, so links/tools would not be opened!\n\n')
 
-    answer2 = str(input('2)Do you want to open monitoring tools in a new window of a browser? [yes/no] '))
+    answer2 = str(input('2) Do you want to open monitoring tools in a new window of a browser? [yes/no]'))
 
 if answer2.lower() == 'yes':
         print('Starting to open up tools in a new Windows of a browser')
@@ -64,9 +64,9 @@ if answer2.lower() == 'yes':
 
         webbrowser.open_new('https://docs.python.org/')
 else:
-        print('3) Your answer is no, so tools would not be opened in a new window of web-browser!\n\n')
+        print('3) Your answer is no, so monitoring tools would not be opened!\n\n')
 
-answer3 = str(input('Do you want to start Thunderbird? [yes/no] '))
+answer3 = str(input('Do you want to start Thunderbird? [yes/no]'))
 
 if answer3.lower() == 'yes':
     print('Starting to open Thunderbird mail client.\n\n')
